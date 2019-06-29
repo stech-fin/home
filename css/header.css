@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 3em;
+  color: #202020;
+  background-color: white;
+}
+
+header img.logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2em;
+  margin: auto;
+  margin-left: .7em;
+}
+
+header span.title {
+  line-height: 60px;
+  position: absolute;
+  margin-left: 3.1em;
+  vertical-align: middle;
+}
+
+header .container {
+  font-size: .9em;
+  top: 0;
+  bottom: 0;
+  margin-right: 20px;
+  text-align: right;
+}
+
+header .container .item {
+  display: inline-block;
+  margin-right: 1em;
+  margin-left: 1em;
+  vertical-align: middle;
+}

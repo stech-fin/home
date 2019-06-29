@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+.background {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  color: white;
+  background: -webkit-linear-gradient(225deg, #7283e4, #12279e) fixed;
+  background: -o-linear-gradient(225deg, #7283e4, #12279e) fixed;
+  background: linear-gradient(-135deg, #7283e4, #12279e) fixed;
+}
+
+.background span.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  padding-right: 40px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.background span.content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 80vw;
+  padding-right: 40px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 点滅 */
+
+.blinking {
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+
+  .background {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .background span.title {
+    font-size: 50px;
+  }
+
+  .background span.content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+
+  .background {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background span.title {
+    font-size: 60px;
+  }
+
+  .background span.content {
+    font-size: 30px;
+  }
+}
