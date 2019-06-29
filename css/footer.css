@@ -1,0 +1,16 @@
+footer {
+  width: 100vw;
+  height: 150px;
+  color: #b1b0b0;
+  background-color: #113c8a;
+}
+
+footer .center {
+  bottom: 0;
+  padding-top: 6em;
+  text-align: center;
+}
+
+footer .center span.creadit {
+  font-size: .7;
+}

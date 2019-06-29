@@ -21,8 +21,10 @@
 body {
   font-family: 'Roboto', 'Noto Sans JP', sans-serif;
   font-size: 20px;
-  margin: 0;
+  top: 0;
+  margin: 0 0 0 0;
   list-style: none !important;
+  background-color: #eee;
 }
 
 body::-webkit-scrollbar {
