@@ -1,55 +1,68 @@
 @charset 'UTF-8';
 
-.background {
-  position: relative;
-  z-index: 0;
-  width: 100vw;
-  width: 100%;
-  height: 50vh;
+section.content1 {
+  padding-bottom: 5em;
   color: white;
-  background: -webkit-linear-gradient(225deg, #d88080, #a10000) fixed;
-  background: -o-linear-gradient(225deg, #d88080, #a10000) fixed;
-  background: linear-gradient(-135deg, #d88080, #a10000) fixed;
+  background-color: #000f11;
 }
 
-.background span.title {
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80vw;
-  padding-right: 40px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-.background span.content {
-  font-size: 18px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  width: 80vw;
-  padding-right: 40px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-article.members span.title {
+section.content1 span.title {
   font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3',    'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
   font-size: 3em;
   display: block;
   padding-top: 2em;
   padding-left: .7em;
+}
+
+section.content2 {
+  padding-bottom: 5em;
   color: white;
   background-color: #000f11;
 }
 
-article.members .members {
+section.content2 .bigword {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  background-color: #9b0000;
+}
+
+section.content2 .bigword span.title {
+  font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3',    'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+  font-size: 3em;
+  display: block;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+section.content2 .bigword span.word {
+  font-size: 1.5em;
+}
+
+section.content2 .bigword span.word::before {
+  content: '"';
+}
+
+section.content2 .bigword span.word::after {
+  content: '"';
+}
+
+section.content2 .bigword img.internalimg {
+  width: 80%;
+  margin-top: 3em;
+}
+
+section.content2 .bigword .text {
+  margin-top: 1em;
+  margin-right: 10%;
+  margin-left: 10%;
+  word-wrap: break-word;
+}
+
+.members {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,21 +71,21 @@ article.members .members {
   justify-content: space-between;
 }
 
-article.members .members .member {
+.members .member {
   width: 100%;
 }
 
-article.members .members .member img.memberimg {
+.members .member img.memberimg {
   width: 100%;
 }
 
-article.members .members .member span {
+.members .member span {
   font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3',    'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
   width: 100%;
   margin-top: 35%;
 }
 
-article.members .members .member span.name {
+.members .member span.name {
   font-size: 120%;
   position: absolute;
   width: 15%;
@@ -82,12 +95,12 @@ article.members .members .member span.name {
   color: white;
 }
 
-article.members .members .member span.name span.cap {
+.members .member span.name span.cap {
   font-size: 300%;
   letter-spacing: 3px;
 }
 
-article.members .members .member span.name span.subtitle {
+.members .member span.name span.subtitle {
   font-size: .5em;
   display: inline-block;
   margin-top: -1.2em;
@@ -95,8 +108,74 @@ article.members .members .member span.name span.subtitle {
   color: #b3b3b3;
 }
 
-article.members .moreinfo {
-  width: 100vw;
-  height: 5em;
+section.content3 {
+  font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3',    'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+  color: #2e2e2e;
+}
+
+section.content3 .title {
+  font-size: 3em;
+  margin-left: 1em;
+  letter-spacing: 3px;
+}
+
+section.content3 .title span.cap {
+  font-size: 4em;
+}
+
+section.content3 .flexstyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.content3 .flexstyle img.icon {
+  width: 30vw;
+  height: auto;
+  margin-left: 10%;
+}
+
+section.content3 .flexstyle .message {
+  font-weight: 600;
+  line-height: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 4em;
+}
+
+section.tend {
+  position: relative;
+  overflow: hidden;
+  margin: 10% 0;
+  padding: 80px 0;
+}
+
+section.tend:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 80%;
+  margin: 3% -10% 0;
+  content: '';
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
   background-color: #000f11;
+}
+
+section.tend .innercontent {
+  -webkit-box-sizing: boder-box;
+  box-sizing: boder-box;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 10px 120px;
+  text-align: center;
+  color: #fff;
 }

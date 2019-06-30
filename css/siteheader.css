@@ -1,0 +1,54 @@
+.background {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  width: 100%;
+  height: 50vh;
+  color: white;
+  background: -webkit-linear-gradient(225deg, #d88080, #a10000) fixed;
+  background: -o-linear-gradient(225deg, #d88080, #a10000) fixed;
+  background: linear-gradient(-135deg, #d88080, #a10000) fixed;
+}
+
+.background span.title {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  padding-right: 40px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.background span.content {
+  font-size: 18px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 80vw;
+  padding-right: 40px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.background .sitelink {
+  font-size: .8em;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+.background .sitelink a {
+  margin-right: .5em;
+  margin-left: .5em;
+  padding-right: .2em;
+  padding-left: .2em;
+  color: white;
+  border-bottom: white 1px solid;
+}

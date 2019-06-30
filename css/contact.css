@@ -1,0 +1,27 @@
+section.contact {
+  margin-top: 10em;
+  margin-right: 10%;
+  margin-bottom: 3em;
+  margin-left: 10%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+  background-color: white;
+}
+
+section.contact span.title {
+  font-size: 2em;
+}
+
+section.contact span.subtitle {
+  font-size: .7em;
+  display: block;
+  color: #8f8f8f;
+}
+
+section.contact img.QR {
+  width: 10vw;
+  height: auto;
+  margin-top: 3em;
+  border: 2px solid #636363;
+}
