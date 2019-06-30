@@ -25,3 +25,35 @@ section.contact img.QR {
   margin-top: 3em;
   border: 2px solid #636363;
 }
+
+section.contact .contacts {
+  margin-top: 1em;
+  text-align: center;
+}
+
+section.contact .contacts i {
+  font-size: 5vw;
+  display: inline;
+  margin-right: .5em;
+  margin-left: .5em;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  text-align: center;
+}
+
+section.contact .contacts i.fa-twitter-square {
+  color: #09f;
+}
+
+section.contact .contacts i.fa-twitter-square:hover {
+  color: #06a;
+}
+
+section.contact .contacts i.fa-facebook-square {
+  color: #04f;
+}
+
+section.contact .contacts i.fa-facebook-square:hover {
+  color: #003f69;
+}
